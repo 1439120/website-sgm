@@ -3,10 +3,10 @@ require('dotenv').config()
 // Make sure this is private to this module
 const config = {
   server: 'sgm-server-2.database.windows.net',
-  database: process.env.DB_NAME,
+  database: 'StudyGroupDB',
   // Put login details in env. variables for security
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
+  user: 'StudyGroupManager',
+  password: '#1Study-Group',
   port: 1433,
   // Required for Azure
   options: {
