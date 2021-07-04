@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: darkslategray;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: white;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: dimgray;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .header .text-left{
+  float: right;
+  padding: 2px;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+.wrapper .main_content .name{
+    position: relative;
+    font-weight: 900;
+    font-size: large;
+}
+
+.wrapper .main_content .contacts, .wrapper .main_content .bloq, .wrapper .main_content .rating{
+    padding-left: 2%;
+}
+
+.wrapper .main_content .rating{
+    color: gold;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    /* top: 25px; */
+    left: calc(50% - 50px);
+}
+
+/***********  For The Groups Page*************/
+/* Cards*/
+.card{
+  padding: -5%;
+  margin: 5px;
+  padding-left: 5px;
+  left: 20px;
+  position: relative;
+  width: 17rem;
+}
+
+.card-link{
+  padding-bottom: 2px;
+  position: relative;
+}
+
+.main_content{
+  padding: 5px;
+}
+
+.section-title{
+  font-size: x-large;
+  text-align: center;
+  padding: 5px;
+}
+
+.create-group-btn{
+  float: right;
+  margin: 20px;
+  margin: 20px;
+}
+/******** Progress Bar **********/
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa.fa-star {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: var(--size); height: 18px; background-color: #04AA6D;}
+.bar-4 {width: var(--size); height: 18px; background-color: #2196F3;}
+.bar-3 {width: var(--size); height: 18px; background-color: #00bcd4;}
+.bar-2 {width: var(--size); height: 18px; background-color: #ff9800;}
+.bar-1 {width: var(--size); height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}

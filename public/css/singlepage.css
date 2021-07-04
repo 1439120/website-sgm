@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Pangolin&family=Playfair+Display&family=Roboto:wght@100&family=Yellowtail&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: lightslategray;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.loginbox{
+    width: 320px;
+    height: 420px;
+    /*background: url(../images/Sasuke.jpg);*/
+    background: darkslategrey;
+    color: lightslategray;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+/* .loginbox.second{
+    background: wheat;
+} */
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h2{
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    /* background: #fb2525;
+    border-radius: 20px; */
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    /* color: rgb(0, 15, 22); */
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type = "text"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+
+.loginbox input[type = "submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: dimgray;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type = "submit"]:hover{
+   cursor: pointer;
+   background: #ffc107;
+   color: #000;
+}
+
+.loginbox a{
+    text-align: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: dimgray;
+    font-weight: bold;
+}
+
+.loginbox a:hover{
+    color: #ffc107;
+}
+
+/****************** For comments****************************/
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper{
+    padding: 10px;
+    min-height: 100vh;
+    background: wheat;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    min-height: 400px;
+}
+
+.wrapper .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.wrapper .form .row .input-group{
+    margin: 0 10px;
+    display: block;
+}
+
+.wrapper .form .row .input-group{
+    padding: 5 5px;
+    display: block;
+}
+
+.wrapper .form .row .input-group:first-child{
+    padding-left: -0;
+}
+
+.wrapper .form .row .input-group:last-child{
+    padding-right: 5;
+}
+
+.wrapper .form .input-group{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.wrapper .form .input-group label{
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.wrapper .form .input-group input, .wrapper .form .input-group textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #00b894;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.wrapper .form .row .input-group{
+    width: 290px;
+}
+
+.wrapper .form .input-group.textarea{
+    height: 200px;
+    margin-top: -10%;
+}
+
+
+.wrapper .form .input-group.textarea textarea{
+    resize: none;
+    height: 200px;
+}
+
+.wrapper .form .input-group.textarea textarea{
+    resize: none;
+}
+
+.input-group.link{
+    padding: auto;
+    margin-top: 6;
+}
+
+/******************* Styling comments   *******************/
+.wrapper .prev-comments {
+    padding-top: 15px;
+}
+
+.wrapper .prev-comments .single-item{
+    background: white;
+    box-shadow: 0 0 5px 10px rgb(0, 0, 0, 0.3);
+    padding: -10px 20px;
+    text-align: left;
+    margin: 0;
+}
+
+.wrapper .prev-comments .single-item h4{
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+}
+
+.wrapper .prev-comments .single-item a{
+    margin: 10px 0;
+    font-size: 1rem;
+    color: blue;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.wrapper .prev-comments .single-item h4, .wrapper .prev-comments .single-item a, .wrapper .prev-comments .single-item p{
+    padding-left: 10px;
+}

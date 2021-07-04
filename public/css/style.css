@@ -1,0 +1,244 @@
+/* Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Pangolin&family=Playfair+Display&family=Roboto:wght@100&family=Yellowtail&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+header,
+section{
+    overflow-x: hidden;
+}
+
+:root{
+    --Single-font: "Pangolin", cursive;
+    --Kalam: "Kalam", cursive;
+    --Roboto: "Roboto", cursive;
+    --Playfair: "Playfair", cursive;
+    --Yellowtail: "Yellowtail", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(
+        to bottom,
+        #dd2476, #ff512f);
+    --light-gray: rgba(255,255,255, 0.2)
+}
+
+header a{
+    font-family: var(--Single-font);
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+header{
+    background: dimgray;
+    background: var(bggradient);
+}
+
+header .nav-item:last-child{
+    padding: 10.5em;
+}
+
+header .nav-item{
+    padding: 0.9em;
+}
+
+header .navbar{
+    background-color: darkslategray;
+}
+
+header .navbar-brand{
+    padding-left: 8rem;
+}
+
+header .nav-link:hover{
+    color: black;
+}
+
+header .row .col-md-5{
+    padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-7{
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+}
+
+header .row .col-md-5 img{
+    width: 90%;
+}
+
+header .container .col-md-7 h6{
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1{
+    font-size: 8vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+
+.SearchGroup{
+
+
+    margin-top: 0;
+    padding-left: -100px;
+    float : right;
+    padding-top: -15px;
+   
+}
+
+
+/* #SearchBox {
+
+    
+    height:40px;
+    width:500px;
+   
+    float : right;
+   
+} */
+
+
+
+/* Section 1*/
+.section-1{
+    /* background-color: lightblue; */
+    padding: 20vmin 0;
+}
+
+.section-1 .row .col-md-6 .itachi img{
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child{
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel{
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vim 10vmin;
+    box-shadow: 0px 25px 42px rgb(0, 0, 0, 0.2);
+    font-family: var(--Playfair);
+    z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1{
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+
+
+.section-1 .row .col-md-6 .panel p{
+    font-size: 0.9em;
+    columns: rgb(0, 0, 0, 0.5);
+}
+
+
+/* Footer */
+footer{
+    background: rgb(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+
+footer p>span{
+    color: #dd2476;
+}
+
+footer input{
+    border: none !important;
+}
+
+footer input::placeholder{
+    color: white !important;
+}
+
+footer .input-group .input-group-text{
+    background: var(--bggradient);
+    border: none;
+}
+
+footer .column i{
+    color: #dd2476;
+}
+
+footer .column i{
+    padding: 0 0.5em;
+}
+
+[data-tooltip]{
+    position: relative;
+    cursor: default;
+}
+
+[data-tooltip]::after{
+    position: absolute;
+    width: 200px;
+    left: calc(50% - 70px);
+    content: attr(data-tooltip);
+    bottom: 35px;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+    background: black;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+[data-tooltip]:hover::after{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    /* width: 100%; */
+    /* width: 80%; */
+    margin: 0%;
+    padding: 50px;
+    /* margin: 5px; */
+    left: 5px;
+    position: relative;
+  }
+
+  tr{
+      left: 5px;
+      position: relative;
+  }
+  
+  td, th {
+    /*border: 1px solid #dddddd;*/
+    text-align: left;
+    padding: 8px;
+  }
+
+  
+  tr:nth-child(even) {
+    background-color: darkslategray;
+  }
+
+  .g-link {
+    color: black;
+  }
+
+.delete-icon{
+    padding-left: 15%;
+    color: rgb(0, 0, 0, 0.6);
+}

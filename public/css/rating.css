@@ -1,0 +1,37 @@
+.star-container{
+    width: 400px;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.star-container .star-widget input{
+display: none;
+}
+
+.star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+.star-widget input:not(:checked) ~ label:hover,
+.star-widget input:not(:checked) ~ label:hover ~ label{
+    color: #fd4;
+}
+
+.star-widget input:checked ~ label{
+    color: #fd4;
+}
+
+/* input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+} */
